@@ -15,7 +15,7 @@ RUN apk add --no-cache mingw-w64-gcc=11.2.0-r0
 # Add emscripten dependencies
 RUN apk add --no-cache emscripten-fastcomp=1.40.1-r1
 
-RUN apk add --no-cache libxcb libxcb-dev
+RUN apk add --no-cache libxcb libxcb-dev libxcb-static
 
 # Add apple dependencies
 RUN apk add --no-cache clang=12.0.1-r1 cmake=3.21.3-r0 libxml2-dev=2.9.13-r0 \
